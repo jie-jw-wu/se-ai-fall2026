@@ -482,10 +482,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deadlines" class="md-nav__link">
+  <a href="#one-deadline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deadlines
+        One deadline
       
     </span>
   </a>
@@ -855,10 +855,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deadlines" class="md-nav__link">
+  <a href="#one-deadline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deadlines
+        One deadline
       
     </span>
   </a>
@@ -972,10 +972,13 @@ found.</strong></p>
 <td><strong>4 · Assure</strong></td>
 <td>8</td>
 <td>Build checks that catch what you found</td>
-<td>QA report + demo</td>
+<td>QA report + demo video</td>
 </tr>
 </tbody>
 </table>
+<p><strong>One deadline: everything is due together on Fri, Oct 30.</strong> The week numbers
+above are the recommended pace, not graded deadlines — see
+<a href="#one-deadline">One deadline</a> below for why the pace still matters.</p>
 <p>Each phase follows the lecture that supports it. You train after the training
 lectures, not before them; you red-team before the evaluation lecture, so that
 the lecture lands on something you have already felt.</p>
@@ -1179,7 +1182,8 @@ report: <strong>what fraction does your QA catch?</strong></p>
 <p>That number is the point of the whole project. It is almost never 100%, and the
 gap is the honest answer to "how much can automated assurance actually do here."</p>
 <p><strong>Hand in:</strong> a QA report (<code>templates/phase4-qa-report.md</code>) with your catch rate,
-your checks as working code in the repo, and a 5-minute demo in class.</p>
+your checks as working code in the repo, and a <strong>3-minute recorded demo video</strong>:
+run your checks live, show one failure being caught, show one getting through.</p>
 <blockquote>
 <p><strong>Be able to answer:</strong> which of your failures can no automated check catch, and
 what would you do about those in a real team?</p>
@@ -1192,48 +1196,57 @@ to fix, and what it got confidently wrong. One page of reflection at the end.</p
 <p>This is not compliance paperwork. You are training a model <em>and</em> being trained
 by working with one — the log is where you notice the second thing happening.</p>
 <hr />
-<h2 id="deadlines">Deadlines<a class="headerlink" href="#deadlines" title="Permanent link">&para;</a></h2>
+<h2 id="one-deadline">One deadline<a class="headerlink" href="#one-deadline" title="Permanent link">&para;</a></h2>
+<p><strong>Everything is due Friday, Oct 30 (end of day)</strong> — one bundle: model card +
+repo, task report, findings table, QA report + demo video, AI-use log +
+reflection. There is no class that day; the deadline is the session.</p>
+<p>The phases have a <strong>recommended pace</strong>, not graded deadlines:</p>
 <table>
 <thead>
 <tr>
-<th>Due</th>
+<th>Pace</th>
 <th>Date</th>
-<th>What</th>
+<th>What should be done</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Week 4, Fri</strong></td>
+<td>Week 4, Fri</td>
 <td>Sep 25</td>
-<td>Phase 1: model trained, model card submitted</td>
+<td>Phase 1: model trained, model card drafted</td>
 </tr>
 <tr>
-<td><strong>Week 6, Fri</strong></td>
+<td>Week 6, Fri</td>
 <td>Oct 9</td>
-<td>Phase 2: task report</td>
+<td>Phase 2: task report drafted</td>
 </tr>
 <tr>
-<td><strong>Week 7, Fri</strong></td>
+<td>Week 7, Fri</td>
 <td>Oct 16</td>
-<td><strong>Phase 3: findings table</strong> — hard deadline</td>
+<td>Phase 3: findings table filling up</td>
 </tr>
 <tr>
-<td><strong>Week 8, Wed</strong></td>
-<td>Oct 21</td>
-<td>Phase 4: QA report + repo</td>
-</tr>
-<tr>
-<td><strong>Week 8, Fri</strong></td>
+<td>Week 8, Fri</td>
 <td>Oct 23</td>
-<td>Demo in class (5 minutes)</td>
+<td>Phase 4: checks running — and the <strong>pooled-findings session</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Midterm 1 is Wednesday of Week 6 (Oct 7), between Phases 2 and 3. Phase 2 is due
-that Friday deliberately — it is the lightest deliverable, and it gives you the
-exam week back.</p>
-<p>The Week 7 deadline is firm: the Week 8 session analyses the pooled class
-findings, and that cannot happen without everyone's table.</p>
+<p>Why the pace matters even though only Oct 30 is graded:</p>
+<ul>
+<li><strong>The later phases cannot be compressed.</strong> Breaking a model well takes
+  evenings of poking, and Phase 4 needs Phase 3's findings. Students who
+  start Phase 3 in the last week hand in thin tables — every year, in every
+  course shaped like this.</li>
+<li><strong>The Week 8 pooled session (Fri, Oct 23) uses whatever table you bring.</strong>
+  Come with ten findings and you compare against the class; come with two and
+  you mostly watch. The final pooled catalogue is assembled from the Oct 30
+  submissions.</li>
+<li>Midterm 1 (Wed, Oct 7) sits between Phases 2 and 3 — the pace gives you the
+  exam week back.</li>
+</ul>
+<p>If you are behind the pace at any point, say so in office hours — that is
+what the fallback checkpoint exists for. Ask in Week 4, not Week 9.</p>
 <hr />
 <h2 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link">&para;</a></h2>
 <p>See <a href="rubric/"><code>rubric.md</code></a>. One line: <strong>you are graded on what you found and
