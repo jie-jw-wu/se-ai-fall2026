@@ -487,13 +487,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#phase-4-assure-week-8" class="md-nav__link">
+  <a href="#phase-4-assure-or-improve-week-8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase 4 · Assure (Week 8)
+        Phase 4 · Assure or Improve (Week 8)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Phase 4 · Assure or Improve (Week 8)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#route-a-assure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Route A · Assure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route-b-improve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Route B · Improve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#both-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Both routes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -803,7 +842,35 @@
   <span class="md-ellipsis">
     
   
-    QA report (Phase 4)
+    QA report (Phase 4, Route A)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="templates/phase4-improve-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Improvement report (Phase 4, Route B)
   
 
     
@@ -1085,13 +1152,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#phase-4-assure-week-8" class="md-nav__link">
+  <a href="#phase-4-assure-or-improve-week-8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Phase 4 · Assure (Week 8)
+        Phase 4 · Assure or Improve (Week 8)
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Phase 4 · Assure or Improve (Week 8)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#route-a-assure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Route A · Assure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route-b-improve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Route B · Improve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#both-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Both routes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1221,10 +1327,10 @@ found.</strong></p>
 <td><strong>Findings table</strong></td>
 </tr>
 <tr>
-<td><strong>4 · Assure</strong></td>
+<td><strong>4 · Assure or improve</strong></td>
 <td>8</td>
-<td>Build checks that catch what you found</td>
-<td>QA report + demo video</td>
+<td>Build checks that catch what you found — <strong>or</strong> change the model so it stops doing it</td>
+<td>QA <em>or</em> improvement report + demo video</td>
 </tr>
 </tbody>
 </table>
@@ -1441,8 +1547,39 @@ you consider most serious and why.</p>
 would sail straight through it?</p>
 </blockquote>
 <hr />
-<h2 id="phase-4-assure-week-8">Phase 4 · Assure (Week 8)<a class="headerlink" href="#phase-4-assure-week-8" title="Permanent link">&para;</a></h2>
-<p>You found the problems. Now build the checks that catch them.</p>
+<h2 id="phase-4-assure-or-improve-week-8">Phase 4 · Assure <strong>or</strong> Improve (Week 8)<a class="headerlink" href="#phase-4-assure-or-improve-week-8" title="Permanent link">&para;</a></h2>
+<p>You found the problems. Now do something about them — by one of two routes.
+<strong>Pick one.</strong> Both are worth the same 20 marks, and both are graded on honest
+measurement rather than on how good the result is.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Route A · Assure</strong></th>
+<th><strong>Route B · Improve</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The idea</td>
+<td>Leave the model alone; build checks that <strong>catch</strong> the failures</td>
+<td>Change the model or its pipeline so it <strong>stops producing</strong> them</td>
+</tr>
+<tr>
+<td>You produce</td>
+<td>Three working checks + a catch rate</td>
+<td>One measured change + a before/after rate</td>
+</tr>
+<tr>
+<td>Good if</td>
+<td>You want to think like the engineer who has to ship someone else's model</td>
+<td>You want to think like the engineer who owns the model</td>
+</tr>
+</tbody>
+</table>
+<p>You may do both if you have the time and the GPU hours. There are no extra
+marks for it — do it because you want to know.</p>
+<h3 id="route-a-assure">Route A · Assure<a class="headerlink" href="#route-a-assure" title="Permanent link">&para;</a></h3>
 <p><strong>Pick three findings</strong> from Phase 3 — ideally three different categories — and
 build an automated check for each. Cheap and certain beats clever:</p>
 <table>
@@ -1477,15 +1614,75 @@ build an automated check for each. Cheap and certain beats clever:</p>
 </table>
 <p><strong>Then measure it.</strong> Run your checks across <em>all</em> your Phase 3 findings and
 report: <strong>what fraction does your QA catch?</strong></p>
-<p>That number is the point of the whole project. It is almost never 100%, and the
+<p>That number is the point of the whole route. It is almost never 100%, and the
 gap is the honest answer to "how much can automated assurance actually do here."</p>
-<p><strong>Hand in:</strong> a QA report (<a href="templates/phase4-qa-report/">template</a>) with your catch rate,
-your checks as working code in the repo, and a <strong>3-minute recorded demo video</strong>:
-run your checks live, show one failure being caught, show one getting through.</p>
+<p><strong>Hand in:</strong> a QA report (<a href="templates/phase4-qa-report/">template</a>) with your
+catch rate and your checks as working code in the repo.</p>
 <blockquote>
 <p><strong>Be able to answer:</strong> which of your failures can no automated check catch, and
 what would you do about those in a real team?</p>
 </blockquote>
+<h3 id="route-b-improve">Route B · Improve<a class="headerlink" href="#route-b-improve" title="Permanent link">&para;</a></h3>
+<p><strong>Pick the one failure category you have the most rows of</strong>, form a hypothesis
+about its cause, make <strong>one</strong> change, and measure whether it worked. You have
+nanoGPT and you have already run an ablation — this is the same machinery,
+pointed at a problem you found yourself.</p>
+<table>
+<thead>
+<tr>
+<th>Where to intervene</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data</strong></td>
+<td>Drop files that do not parse · deduplicate harder · keep only files with docstrings · rebalance the mix</td>
+</tr>
+<tr>
+<td><strong>Tokenizer</strong></td>
+<td>A larger vocabulary, or one trained on cleaner text</td>
+</tr>
+<tr>
+<td><strong>Training</strong></td>
+<td>More tokens · a longer context · a different learning-rate schedule</td>
+</tr>
+<tr>
+<td><strong>Fine-tuning</strong></td>
+<td>A small supervised pass on clean examples of the thing it gets wrong (T1 ch. 6–7)</td>
+</tr>
+<tr>
+<td><strong>Decoding</strong></td>
+<td>Lower temperature · top-p tuning · sample <em>n</em> and keep the first that parses</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The rules that make it science, not vibes:</strong></p>
+<ol>
+<li><strong>State the hypothesis before you run.</strong> <em>"Most <code>syntax</code> failures come from
+   truncated files in the corpus; removing unparseable files will cut them."</em></li>
+<li><strong>Change one thing.</strong> Two changes and you cannot say which worked.</li>
+<li><strong>Re-run the same Phase 3 probes</strong> on the new model — same prompts, same
+   decoding settings, same categories — and report the <strong>before/after rate for
+   your target category</strong>.</li>
+<li><strong>Report what it cost and what it broke.</strong> GPU-hours spent; the other
+   categories' rates; whether validation loss moved. A change that fixes
+   <code>syntax</code> by making everything shorter and duller is a real result, and
+   saying so is worth more than hiding it.</li>
+<li><strong>If it did not work, that is a finding.</strong> Report the negative result with
+   the evidence. It is graded exactly the same.</li>
+</ol>
+<p><strong>Hand in:</strong> an improvement report
+(<a href="templates/phase4-improve-report/">template</a>) with the before/after table,
+and the changed pipeline as working code in the repo.</p>
+<blockquote>
+<p><strong>Be able to answer:</strong> did your change fix the cause you hypothesised, or just
+move the symptom — and how would you tell the difference?</p>
+</blockquote>
+<h3 id="both-routes">Both routes<a class="headerlink" href="#both-routes" title="Permanent link">&para;</a></h3>
+<p><strong>A 3-minute recorded demo video.</strong> Route A: run your checks, show one failure
+caught and one getting through. Route B: show the same probe before and after,
+and your before/after numbers.</p>
 <hr />
 <h2 id="also-required-throughout">Also required, throughout<a class="headerlink" href="#also-required-throughout" title="Permanent link">&para;</a></h2>
 <p><strong>Build all of this using an AI coding assistant</strong>, and keep a log of it
@@ -1576,7 +1773,7 @@ problem in Week 3.</p>
 <li><a href="templates/model-card/">Model card</a> and <a href="templates/data-sheet/">data sheet</a> — Phase 1</li>
 <li><a href="templates/phase2-task-report/">Task report</a> — Phase 2</li>
 <li><a href="templates/phase3-findings.csv">Findings table — CSV</a>, with its <a href="templates/phase3-findings-README/">column guide</a> — Phase 3</li>
-<li><a href="templates/phase4-qa-report/">QA report</a> — Phase 4</li>
+<li><a href="templates/phase4-qa-report/">QA report</a> (Route A) or <a href="templates/phase4-improve-report/">improvement report</a> (Route B) — Phase 4</li>
 <li><a href="templates/ai-use-log/">AI-use log</a> — throughout</li>
 </ul>
 <p>Grading is defined in the <a href="rubric/">rubric</a>; GPUs in the <a href="compute/">compute guide</a>.</p>
