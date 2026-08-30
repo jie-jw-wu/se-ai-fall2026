@@ -526,10 +526,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
+  <a href="#templates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Files
+        Templates
       
     </span>
   </a>
@@ -596,6 +596,231 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Templates
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="templates/model-card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="templates/data-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="templates/phase2-task-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Task report (Phase 2)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="templates/phase3-findings-README/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Findings table (Phase 3)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="templates/phase4-qa-report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QA report (Phase 4)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="templates/ai-use-log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI-use log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -899,10 +1124,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
+  <a href="#templates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Files
+        Templates
       
     </span>
   </a>
@@ -1042,10 +1267,56 @@ GPU-hours and it is big enough to learn real structure.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Done when:</strong> your loss curve falls and flattens, and the model generates
-Python that mostly looks like Python.</p>
+<p><strong>The ablation — learn what a part is for.</strong> Once your baseline trains, pick
+<strong>one</strong> modification from the menu, retrain, and compare:</p>
+<table>
+<thead>
+<tr>
+<th>Ablation</th>
+<th>What it teaches</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Remove the position embeddings</td>
+<td>why order information has to be injected</td>
+</tr>
+<tr>
+<td>1 attention head instead of 6</td>
+<td>what multiple heads buy</td>
+</tr>
+<tr>
+<td>3 layers instead of 6</td>
+<td>what depth buys</td>
+</tr>
+<tr>
+<td>Remove LayerNorm</td>
+<td>why training stability needs it — expect drama</td>
+</tr>
+<tr>
+<td>Context 256 instead of 512</td>
+<td>what a longer window is worth on code</td>
+</tr>
+<tr>
+<td>Character-level tokenizer instead of BPE</td>
+<td>what a tokenizer actually does</td>
+</tr>
+</tbody>
+</table>
+<p>Before the second run, <strong>write down your prediction</strong> — what will the loss do,
+and what will the samples look like? Then report, in the model card: what you
+removed, what you predicted, what actually happened (final validation loss for
+both runs, plus one side-by-side sample). Being wrong in your prediction is
+fine; noticing <em>how</em> you were wrong is the point.</p>
+<p>One ablation is required; more are welcome if your GPU budget allows — each is
+one more training run. Different students will pick different rows, so the
+Week 8 pooled session also assembles a class-wide picture of which parts of a
+transformer matter most.</p>
+<p><strong>Done when:</strong> your loss curve falls and flattens, the model generates Python
+that mostly looks like Python, and your ablation comparison is in the card.</p>
 <p><strong>Hand in:</strong> your repository (data prep, training config, a README that
-reproduces your run) and a model card (<code>templates/model-card.md</code>).</p>
+reproduces your run) and a model card (<a href="templates/model-card/">template</a>) —
+including the ablation section.</p>
 <blockquote>
 <p><strong>Be able to answer:</strong> why does a repository-level split matter, and what would
 a file-level split have done to your numbers?</p>
@@ -1068,7 +1339,7 @@ Week 4, not Week 7.</p>
 code from another course is ideal, because you can judge the output.</p>
 <p><strong>For each of the 20, record:</strong> what you gave it, what it produced, and whether
 you would accept, edit, or reject that output.</p>
-<p><strong>Hand in:</strong> a task report (<code>templates/phase2-task-report.md</code>) with your
+<p><strong>Hand in:</strong> a task report (<a href="templates/phase2-task-report/">template</a>) with your
 accept / edit / reject counts and three examples — your best, your worst, and
 the one that was most nearly right.</p>
 <blockquote>
@@ -1091,7 +1362,7 @@ different ways of going wrong.</p>
 <li>Give it a function name that contradicts what the function does</li>
 <li>Feed it non-English identifiers, or very long inputs</li>
 </ul>
-<p><strong>Log every finding</strong> in the shared table (<code>templates/phase3-findings.csv</code>),
+<p><strong>Log every finding</strong> in the shared findings table (<a href="templates/phase3-findings.csv">CSV template</a>, <a href="templates/phase3-findings-README/">column guide</a>),
 using the fixed category list. The categories matter: they are what make the
 class's findings poolable.</p>
 <table>
@@ -1181,7 +1452,7 @@ build an automated check for each. Cheap and certain beats clever:</p>
 report: <strong>what fraction does your QA catch?</strong></p>
 <p>That number is the point of the whole project. It is almost never 100%, and the
 gap is the honest answer to "how much can automated assurance actually do here."</p>
-<p><strong>Hand in:</strong> a QA report (<code>templates/phase4-qa-report.md</code>) with your catch rate,
+<p><strong>Hand in:</strong> a QA report (<a href="templates/phase4-qa-report/">template</a>) with your catch rate,
 your checks as working code in the repo, and a <strong>3-minute recorded demo video</strong>:
 run your checks live, show one failure being caught, show one getting through.</p>
 <blockquote>
@@ -1191,7 +1462,7 @@ what would you do about those in a real team?</p>
 <hr />
 <h2 id="also-required-throughout">Also required, throughout<a class="headerlink" href="#also-required-throughout" title="Permanent link">&para;</a></h2>
 <p><strong>Build all of this using an AI coding assistant</strong>, and keep a log of it
-(<code>templates/ai-use-log.md</code>): what you asked for, what you accepted, what you had
+(<a href="templates/ai-use-log/">AI-use log template</a>): what you asked for, what you accepted, what you had
 to fix, and what it got confidently wrong. One page of reflection at the end.</p>
 <p>This is not compliance paperwork. You are training a model <em>and</em> being trained
 by working with one — the log is where you notice the second thing happening.</p>
@@ -1249,7 +1520,7 @@ reflection. There is no class that day; the deadline is the session.</p>
 what the fallback checkpoint exists for. Ask in Week 4, not Week 9.</p>
 <hr />
 <h2 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link">&para;</a></h2>
-<p>See <a href="rubric/"><code>rubric.md</code></a>. One line: <strong>you are graded on what you found and
+<p>See the <a href="rubric/">rubric</a>. One line: <strong>you are graded on what you found and
 what you built to catch it, not on how good your model is.</strong></p>
 <p>A model that produces broken Python is completely fine — it gives you more to
 find in Phase 3. A student who finds 15 real failures and catches 8 of them has
@@ -1266,24 +1537,22 @@ in a research paper about how this course is taught.</p>
 <p>You will get a short consent form in Week 1. That is the whole of it; you do not
 need to think about it again.</p>
 <h2 id="compute">Compute<a class="headerlink" href="#compute" title="Permanent link">&para;</a></h2>
-<p><a href="compute/"><code>compute.md</code></a>. You get an ACCESS account and a quota. Run something
-trivial in Week 1 to check your access works — do not discover an account
+<p>See the <a href="compute/">compute guide</a>. The working plan is the <strong>free GPU tiers</strong>
+— Kaggle and Colab are enough for this model, ablation included. An ACCESS
+classroom allocation is under review and will be announced if it lands. Run
+something trivial in Week 1 to check your setup works — do not discover a
 problem in Week 3.</p>
 <hr />
-<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">&para;</a></h2>
-<pre><code>README.md                        this file — the whole spec
-rubric.md                        how it is graded
-compute.md                       ACCESS / NAIRR setup
-templates/
-  model-card.md                  Phase 1
-  data-sheet.md                  Phase 1
-  phase2-task-report.md          Phase 2
-  phase3-findings.csv            Phase 3 — the shared table
-  phase4-qa-report.md            Phase 4
-  ai-use-log.md                  throughout
-instructor/
-  checklist.md                   setup and week-by-week running notes
-</code></pre>
+<h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
+<p>Everything you hand in has a template on this site:</p>
+<ul>
+<li><a href="templates/model-card/">Model card</a> and <a href="templates/data-sheet/">data sheet</a> — Phase 1</li>
+<li><a href="templates/phase2-task-report/">Task report</a> — Phase 2</li>
+<li><a href="templates/phase3-findings.csv">Findings table — CSV</a>, with its <a href="templates/phase3-findings-README/">column guide</a> — Phase 3</li>
+<li><a href="templates/phase4-qa-report/">QA report</a> — Phase 4</li>
+<li><a href="templates/ai-use-log/">AI-use log</a> — throughout</li>
+</ul>
+<p>Grading is defined in the <a href="rubric/">rubric</a>; GPUs in the <a href="compute/">compute guide</a>.</p>
 
 
 
