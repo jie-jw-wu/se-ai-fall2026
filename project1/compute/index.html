@@ -461,17 +461,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-you-need" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What you need
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#where-the-compute-comes-from-free-tiers-today" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -480,52 +469,13 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Where the compute comes from — free tiers, today">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#access-applied-for-pending" class="md-nav__link">
     <span class="md-ellipsis">
       
         ACCESS — applied for, pending
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#timing-and-it-is-6-august" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Timing — and it is 6 August
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#practical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Practical notes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#if-compute-fails-you" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        If compute fails you
       
     </span>
   </a>
@@ -943,17 +893,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-you-need" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What you need
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#where-the-compute-comes-from-free-tiers-today" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -962,52 +901,13 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Where the compute comes from — free tiers, today">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#access-applied-for-pending" class="md-nav__link">
     <span class="md-ellipsis">
       
         ACCESS — applied for, pending
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#timing-and-it-is-6-august" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Timing — and it is 6 August
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#practical-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Practical notes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#if-compute-fails-you" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        If compute fails you
       
     </span>
   </a>
@@ -1032,49 +932,13 @@
 
 
 <h1 id="compute-for-project-1">Compute for Project 1<a class="headerlink" href="#compute-for-project-1" title="Permanent link">&para;</a></h1>
-<h2 id="what-you-need">What you need<a class="headerlink" href="#what-you-need" title="Permanent link">&para;</a></h2>
-<p>Only Phase 1 needs a GPU. Phases 2–4 run on a laptop.</p>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>Compute</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1 · Build</strong></td>
-<td>2–6 GPU-hours per successful run — you need two (baseline + your ablation)</td>
-</tr>
-<tr>
-<td><strong>2 · Use</strong></td>
-<td>Inference only — a laptop is fine</td>
-</tr>
-<tr>
-<td><strong>3 · Break</strong></td>
-<td>Inference only</td>
-</tr>
-<tr>
-<td><strong>4 · Assure</strong></td>
-<td>No model needed; you are writing checks</td>
-</tr>
-<tr>
-<td><strong>Budget per student</strong></td>
-<td><strong>≈ 15 GPU-hours</strong>, allowing for runs that fail</td>
-</tr>
-</tbody>
-</table>
-<p>Plan for two or three failed attempts. The first run always dies on something —
-a path, a shape mismatch, an out-of-memory. The 2–6 hour figure is the
-<em>successful</em> run.</p>
-<blockquote>
-<p>These are estimates from the model size and token count. A 10M-parameter
-model at ~20 tokens/parameter is small: a free-tier T4 trains it in an
-afternoon.</p>
-</blockquote>
+<p>Only Phase 1 (training) needs a GPU — Phases 2–4 run on a laptop. Budget
+<strong>≈ 15 GPU-hours</strong> for the semester: a successful run takes 2–6 hours on a
+free-tier T4, you need two (baseline + your ablation), and the first attempt
+always dies on something — a path, a shape mismatch, an out-of-memory.</p>
 <h2 id="where-the-compute-comes-from-free-tiers-today">Where the compute comes from — free tiers, today<a class="headerlink" href="#where-the-compute-comes-from-free-tiers-today" title="Permanent link">&para;</a></h2>
-<p>The plan is to <strong>explore the free GPU resources first</strong> — they are genuinely
-enough for this model:</p>
+<p><strong>Explore the free GPU resources first</strong> — they are genuinely enough for this
+model:</p>
 <ul>
 <li><strong>Kaggle Notebooks</strong> — a free weekly GPU quota (around 30 hours/week on
   T4/P100-class GPUs; check your account page for the current number). That
@@ -1088,78 +952,16 @@ enough for this model:</p>
   overnight.</li>
 </ul>
 <p>Whatever you use, do the same three things: pin your environment, checkpoint
-regularly, and keep the training log.</p>
-<h3 id="access-applied-for-pending">ACCESS — applied for, pending<a class="headerlink" href="#access-applied-for-pending" title="Permanent link">&para;</a></h3>
+regularly, and log training to a file (you will want the loss curve later).</p>
+<h2 id="access-applied-for-pending">ACCESS — applied for, pending<a class="headerlink" href="#access-applied-for-pending" title="Permanent link">&para;</a></h2>
 <p>An <strong>ACCESS Classroom (Explore) allocation</strong> (with the NAIRR Pilot education
 call as a complement) <strong>has been applied for and is under review</strong>. If it is
 granted, accounts and instructions will be announced on the course website,
 and you can move mid-project — your checkpoints and configs transfer. Nothing
 in Phase 1 waits on it: the free tiers are the working plan.</p>
-<h2 id="timing-and-it-is-6-august">Timing — and it is 6 August<a class="headerlink" href="#timing-and-it-is-6-august" title="Permanent link">&para;</a></h2>
-<p>Class starts <strong>31 August</strong>. That is about <strong>three and a half weeks</strong>, and an
-ACCESS allocation request is reviewed rather than granted on the spot. Assume it
-may not be live for Week 1.</p>
-<p><strong>Do this week:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Priority</th>
-<th>Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1</strong></td>
-<td>Submit the ACCESS Classroom (Explore) request <strong>now</strong>. It is the long pole.</td>
-</tr>
-<tr>
-<td><strong>2</strong></td>
-<td>Set up the <strong>Colab/Kaggle fallback path</strong> and test it end to end. This is the Week 1 plan whether or not ACCESS lands.</td>
-</tr>
-<tr>
-<td><strong>3</strong></td>
-<td>Run Phase 1 yourself once on whatever you can get — confirms the recipe and produces the spare checkpoint.</td>
-</tr>
-<tr>
-<td><strong>4</strong></td>
-<td>Prepare and publish the corpus.</td>
-</tr>
-<tr>
-<td><strong>5</strong></td>
-<td>When ACCESS activates, send the roster and provision accounts.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>The schedule protects you here.</strong> The recommended pace has Phase 1 done by
-<strong>Friday 25 September</strong> (Week 4), and nothing is actually graded before the
-one deadline on Oct 30. Even if the allocation takes a month, students can
-start on free-tier compute and move across when it lands.</p>
-<p><strong>Do not</strong> let the allocation become a single point of failure for Week 1. The
-Week 1 hands-on session should get every student running a trivial job on
-<em>something</em>, and free-tier is fine for that.</p>
-<h2 id="practical-notes">Practical notes<a class="headerlink" href="#practical-notes" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Queues do not care about your deadline.</strong> The pace has your model trained
-  by Week 4 Friday — start your real run the week before.</li>
-<li><strong>Checkpoint your training.</strong> Jobs get pre-empted. A run that dies at 80% with
-  no checkpoint is a run you do twice.</li>
-<li><strong>Log to a file, not the terminal.</strong> You will want the loss curve later and you
-  will not want to retrain to get it.</li>
-<li><strong>Do not train on the login node.</strong> You will be asked to stop, and rightly.</li>
-</ul>
-<h2 id="if-compute-fails-you">If compute fails you<a class="headerlink" href="#if-compute-fails-you" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Colab or Kaggle free tier</strong> — enough for Phase 1 at a reduced token count.
-   Note the reduction in your model card; a smaller model is completely fine for
-   Phases 2–4.</li>
-<li><strong>A university cluster</strong>, if one is open to graduate students.</li>
-<li><strong>Borrow a checkpoint.</strong> The instructor has a model from the summer run. Using
-   it costs you the Phase 1 marks you did not earn and <strong>protects Phases 2–4</strong>,
-   which is where most of the grade and nearly all of the learning is.</li>
-</ol>
-<p>No student's grade depends on the allocation working. If compute fails, the
-instructor scales the requirement — that is the instructor's problem, not yours
-to absorb.</p>
+<hr />
+<p>If compute fails you anyway, ask for the instructor's spare checkpoint (see
+the spec). No student's grade depends on any allocation working.</p>
 
 
 
