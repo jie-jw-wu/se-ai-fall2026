@@ -481,10 +481,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-1-build-it-use-it-break-it-assure-it-25-individual-weeks-19" class="md-nav__link">
+  <a href="#project-1-build-and-evaluate-a-small-code-language-model-25-individual-weeks-19" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project 1: Build It, Use It, Break It, Assure It (25%, individual, Weeks 1–9)
+        Project 1: Build and Evaluate a Small Code Language Model (25%, individual, Weeks 1–9)
       
     </span>
   </a>
@@ -906,10 +906,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#project-1-build-it-use-it-break-it-assure-it-25-individual-weeks-19" class="md-nav__link">
+  <a href="#project-1-build-and-evaluate-a-small-code-language-model-25-individual-weeks-19" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project 1: Build It, Use It, Break It, Assure It (25%, individual, Weeks 1–9)
+        Project 1: Build and Evaluate a Small Code Language Model (25%, individual, Weeks 1–9)
       
     </span>
   </a>
@@ -1081,10 +1081,6 @@
 <tr>
 <td>Wed, Oct 7</td>
 <td><strong>Midterm 1</strong></td>
-</tr>
-<tr>
-<td>Fri, Oct 23</td>
-<td>Pooled-findings session in class (bring your current Project 1 findings table)</td>
 </tr>
 <tr>
 <td>Mon, Oct 26</td>
@@ -1311,15 +1307,15 @@ lives. The <strong>one idea</strong> column is what to keep if you keep nothing 
 <td>Retrieval over a repo, tool calling, MCP, the agent loop ×2 · ⚙ <strong>agentic SE</strong> (a worked episode, tool design, SWE-bench, failure modes</td>
 <td><strong>Beyond the textbook</strong>) retrieval, tools, the agent loop</td>
 <td>Lewis et al. 2020 · Yao et al. 2023 (ReAct) · Jimenez et al. 2024 (SWE-bench)</td>
-<td>Break pace: Oct 16 (recommended)</td>
+<td>Evaluate &amp; break pace: Oct 16 (recommended)</td>
 </tr>
 <tr>
 <td>8</td>
 <td>Oct 19 – 23</td>
-<td>Evaluation: pass@k, benchmarks, contamination · ⚙ <strong>testing with LLMs</strong>, oracle problem, TDD, mutation score · <strong>pooled-findings session</strong> (bring your current table) + module wrap</td>
+<td>Evaluation: pass@k, benchmarks, contamination · ⚙ <strong>testing with LLMs</strong>, oracle problem, TDD, mutation score · module wrap</td>
 <td>Evaluating code models honestly</td>
 <td>Chen et al. 2021 §2.1 · one leaderboard's contamination statement</td>
-<td>Assure pace: Oct 23 (recommended)</td>
+<td>Improve pace: Oct 23 (recommended)</td>
 </tr>
 </tbody>
 </table>
@@ -1449,7 +1445,7 @@ current papers, and any of them yields to a Project 2 clinic when teams need it.
 <td>10%</td>
 </tr>
 <tr>
-<td>Project 1. Build it, use it, break it, assure it</td>
+<td>Project 1. Build and evaluate a small code language model</td>
 <td>25%</td>
 </tr>
 <tr>
@@ -1474,76 +1470,22 @@ the projects, not an exam.  </p>
 <li><strong>Sign in</strong> Attendance is required for this course, please sign the
   sheet each class. We will apply a threshold such as 80% in the end so that one expects to get full marks with occasional exceptions (sick, occasional conflict, etc.) </li>
 <li>Discussion is <strong>assumed</strong>: the paper discussions, the hands-on
-  sessions, the pooled-findings session and the design-presentation Q&amp;A are
-  how this class runs, and everyone is expected to join in naturally.</li>
+  sessions and the design-presentation Q&amp;A are how this class runs, and
+  everyone is expected to join in naturally.</li>
 <li><strong>One way to lose points: disrespect.</strong> Every student's questions, answers
   and presentations are treated with respect. Dismissing or belittling another
   student's contribution costs participation credit.</li>
 </ul>
-<h3 id="project-1-build-it-use-it-break-it-assure-it-25-individual-weeks-19">Project 1: Build It, Use It, Break It, Assure It (25%, individual, Weeks 1–9)<a class="headerlink" href="#project-1-build-it-use-it-break-it-assure-it-25-individual-weeks-19" title="Permanent link">&para;</a></h3>
-<p>Full spec: the Project 1 page <em>(spec released soon)</em> on the course website</p>
-<p><strong>The question Project 1 answers:</strong> <em>how should software engineers be trained
-when AI is part of the process?</em> The course's answer is that you make them build
-the component, use it for real work, attack it, and then either engineer the
-checks that catch what they found <strong>or</strong> improve the model so it stops doing it:
-the engineer's two honest responses to a defect.</p>
-<p><strong>One deadline: everything is due Fri, Oct 30</strong>, in a single bundle: model card +
-repo, task report, findings table, QA report + a <strong>3-minute recorded demo
-video</strong>, AI-use log + reflection. The four phases have a <strong>recommended pace</strong>,
-not graded deadlines:</p>
-<table>
-<thead>
-<tr>
-<th>Phase</th>
-<th>Recommended pace</th>
-<th>What you do</th>
-<th>Hand in (Oct 30)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>1 · Build</strong></td>
-<td>by Fri Sep 25</td>
-<td>Train a small code model with nanoGPT, then <strong>one ablation</strong>: remove a part, predict the effect, measure it</td>
-<td>Model card (incl. ablation) + repo</td>
-</tr>
-<tr>
-<td><strong>2 · Use</strong></td>
-<td>by Fri Oct 9</td>
-<td>Use <em>your own</em> model on a real SE task, on 20 real inputs</td>
-<td>Task report</td>
-</tr>
-<tr>
-<td><strong>3 · Break</strong></td>
-<td>by Fri Oct 16</td>
-<td>Red-team it: find 10+ distinct failures</td>
-<td><strong>Findings table</strong></td>
-</tr>
-<tr>
-<td><strong>4 · Assure or improve</strong></td>
-<td>by Fri Oct 23</td>
-<td>Build checks that catch them (<strong>or</strong> change the model so it stops producing them) and measure either way</td>
-<td>QA <em>or</em> improvement report + demo video</td>
-</tr>
-</tbody>
-</table>
-<p>The pace exists because the later phases cannot be compressed into the last
-weekend, and because the <strong>Week 8 pooled-findings session (Fri, Oct 23)</strong> works
-from whatever findings table you bring that day. Everyone uses the same eight
-failure categories, so the class ends the term with a pooled catalogue of how a
-code model fails and how much of that ordinary testing catches; the final
-catalogue is assembled from the Oct 30 submissions.</p>
-<p>The AI-assisted workflow is <strong>required</strong>, with a log and a one-page reflection.</p>
-<p><strong>Graded on what you found and what you built to catch it, not on model
-quality.</strong> A model that produces broken Python is fine; it gives you more to find
-in Phase 3. Rubric: the Project 1 rubric <em>(spec released soon)</em>.</p>
+<h3 id="project-1-build-and-evaluate-a-small-code-language-model-25-individual-weeks-19">Project 1: Build and Evaluate a Small Code Language Model (25%, individual, Weeks 1–9)<a class="headerlink" href="#project-1-build-and-evaluate-a-small-code-language-model-25-individual-weeks-19" title="Permanent link">&para;</a></h3>
+<p>Train a small code language model from scratch, use it on a real software
+engineering task, document how it fails, then make one evidence-based
+improvement and re-evaluate. Four phases with a recommended pace
+(Sep 25 / Oct 9 / Oct 16 / Oct 23); <strong>everything is due in one bundle on
+Fri, Oct 30</strong>. Full instructions, templates, compute guidance and the
+grading table: the <a href="project1/">Project 1 page</a> on the course website.</p>
 <p><strong>A note on data.</strong> Anonymised Phase 3 findings may be used in a study of how
 this course is taught. Participation is voluntary, opt-in via a Week 1 consent
 form, and has no bearing on grades in either direction.</p>
-<p><strong>Compute:</strong> the free GPU tiers (Kaggle, Colab and similar) are the working
-plan and are enough for this model; an ACCESS classroom allocation has been
-applied for and will be announced if granted, see the
-compute guide <em>(spec released soon)</em>.</p>
 <h3 id="project-2-research-project-with-conference-submission-45-solo-or-in-pairs-weeks-314">Project 2: Research Project with Conference Submission (45%, solo or in pairs, Weeks 3–14)<a class="headerlink" href="#project-2-research-project-with-conference-submission-45-solo-or-in-pairs-weeks-314" title="Permanent link">&para;</a></h3>
 <p>Full spec: the Project 2 page <em>(spec released soon)</em> on the course website, with the proposal template <em>(spec released soon)</em>, the suggested <a href="../reading-list/">reading list</a>, and the candidate venues.</p>
 <p>An original research project on software engineering with/for generative AI, carried out <strong>solo or in pairs</strong> and written up as a conference-format paper. The goal is to take one question from idea to evidence to a paper an outside reviewer would take seriously, and then actually submit it. The rubric is the same for one student as for two; scope expectations scale with the number of hands, and the proposal is where scope is agreed. Undergraduates are encouraged to pair with a graduate student (see above: a suggestion, not a requirement).</p>
