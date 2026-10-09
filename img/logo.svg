@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 60 740 420" width="740" height="420">
+
+<!-- axes -->
+<line x1="95" y1="430" x2="760" y2="430" stroke="#111111" stroke-width="3"/>
+<polygon points="760,430 748,424 748,436" fill="#111111"/>
+<line x1="95" y1="430" x2="95" y2="80" stroke="#111111" stroke-width="3"/>
+<polygon points="95,80 89,92 101,92" fill="#111111"/>
+<text x="430" y="462" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#111111" text-anchor="middle" font-style="italic">compute (log)</text>
+<text x="60" y="255" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#111111" text-anchor="middle" font-style="italic" transform="rotate(-90 60 255)">loss (log)</text>
+<!-- ground -->
+<line x1="110" y1="400" x2="740" y2="400" stroke="#111111" stroke-width="4"/>
+<!-- hoist house -->
+<rect x="112" y="340" width="48" height="60" fill="#111111"/>
+<!-- tower (shaft-rockhouse) -->
+<polygon points="160,400 232,400 218,118 178,118" fill="#111111"/>
+<polygon points="172,118 224,118 198,92" fill="#111111"/>
+<rect x="190" y="150" width="14" height="22" fill="#FFCD00"/>
+<rect x="190" y="200" width="14" height="22" fill="#FFCD00"/>
+<rect x="190" y="250" width="14" height="22" fill="#FFCD00"/>
+<rect x="190" y="300" width="14" height="22" fill="#FFCD00"/>
+<!-- inclined gallery = the scaling line -->
+<line x1="200" y1="106" x2="706" y2="372" stroke="#111111" stroke-width="6"/>
+<line x1="200" y1="130" x2="706" y2="396" stroke="#111111" stroke-width="6"/>
+<line x1="230" y1="121.80769230769232" x2="272" y2="167.93846153846152" stroke="#111111" stroke-width="2"/><line x1="230" y1="145.80769230769232" x2="272" y2="143.93846153846152" stroke="#111111" stroke-width="2"/><line x1="272" y1="143.93846153846152" x2="314" y2="190.06923076923078" stroke="#111111" stroke-width="2"/><line x1="272" y1="167.93846153846152" x2="314" y2="166.06923076923078" stroke="#111111" stroke-width="2"/><line x1="314" y1="166.06923076923078" x2="356" y2="212.2" stroke="#111111" stroke-width="2"/><line x1="314" y1="190.06923076923078" x2="356" y2="188.2" stroke="#111111" stroke-width="2"/><line x1="356" y1="188.2" x2="398" y2="234.33076923076925" stroke="#111111" stroke-width="2"/><line x1="356" y1="212.2" x2="398" y2="210.33076923076925" stroke="#111111" stroke-width="2"/><line x1="398" y1="210.33076923076925" x2="440" y2="256.46153846153845" stroke="#111111" stroke-width="2"/><line x1="398" y1="234.33076923076925" x2="440" y2="232.46153846153845" stroke="#111111" stroke-width="2"/><line x1="440" y1="232.46153846153845" x2="482" y2="278.5923076923077" stroke="#111111" stroke-width="2"/><line x1="440" y1="256.46153846153845" x2="482" y2="254.5923076923077" stroke="#111111" stroke-width="2"/><line x1="482" y1="254.5923076923077" x2="524" y2="300.7230769230769" stroke="#111111" stroke-width="2"/><line x1="482" y1="278.5923076923077" x2="524" y2="276.7230769230769" stroke="#111111" stroke-width="2"/><line x1="524" y1="276.7230769230769" x2="566" y2="322.8538461538461" stroke="#111111" stroke-width="2"/><line x1="524" y1="300.7230769230769" x2="566" y2="298.8538461538461" stroke="#111111" stroke-width="2"/><line x1="566" y1="298.8538461538461" x2="608" y2="344.9846153846154" stroke="#111111" stroke-width="2"/><line x1="566" y1="322.8538461538461" x2="608" y2="320.9846153846154" stroke="#111111" stroke-width="2"/><line x1="608" y1="320.9846153846154" x2="650" y2="367.11538461538464" stroke="#111111" stroke-width="2"/><line x1="608" y1="344.9846153846154" x2="650" y2="343.11538461538464" stroke="#111111" stroke-width="2"/><line x1="650" y1="343.11538461538464" x2="692" y2="389.24615384615385" stroke="#111111" stroke-width="2"/><line x1="650" y1="367.11538461538464" x2="692" y2="365.24615384615385" stroke="#111111" stroke-width="2"/><line x1="300" y1="182.69230769230768" x2="300" y2="400" stroke="#111111" stroke-width="3"/><line x1="384" y1="226.95384615384614" x2="384" y2="400" stroke="#111111" stroke-width="3"/><line x1="468" y1="271.2153846153846" x2="468" y2="400" stroke="#111111" stroke-width="3"/><line x1="552" y1="315.4769230769231" x2="552" y2="400" stroke="#111111" stroke-width="3"/><line x1="636" y1="359.73846153846154" x2="636" y2="400" stroke="#111111" stroke-width="3"/>
+<!-- data points on the line -->
+<circle cx="275" cy="157.51923076923077" r="9" fill="#FFCD00" stroke="#111111" stroke-width="3"/><circle cx="365" cy="204.94230769230768" r="9" fill="#FFCD00" stroke="#111111" stroke-width="3"/><circle cx="455" cy="252.3653846153846" r="9" fill="#FFCD00" stroke="#111111" stroke-width="3"/><circle cx="545" cy="299.78846153846155" r="9" fill="#FFCD00" stroke="#111111" stroke-width="3"/><circle cx="635" cy="347.21153846153845" r="9" fill="#FFCD00" stroke="#111111" stroke-width="3"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<rect width="400" height="400" rx="48" fill="#111111"/>
+<!-- axes -->
+<line x1="80" y1="330" x2="360" y2="330" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<line x1="80" y1="330" x2="80" y2="70" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<!-- headframe tower -->
+<polygon points="118,330 162,330 152,96 128,96" fill="#FFCD00"/>
+<polygon points="124,96 156,96 140,74" fill="#FFCD00"/>
+<!-- incline = scaling line -->
+<line x1="150" y1="96" x2="360" y2="300" stroke="#FFCD00" stroke-width="14" stroke-linecap="round"/>
+<line x1="230" y1="186" x2="230" y2="330" stroke="#FFCD00" stroke-width="7"/>
+<line x1="300" y1="252" x2="300" y2="330" stroke="#FFCD00" stroke-width="7"/>
+<circle cx="205" cy="149.42857142857144" r="11" fill="#FFCD00" stroke="#111111" stroke-width="5"/><circle cx="260" cy="202.85714285714286" r="11" fill="#FFCD00" stroke="#111111" stroke-width="5"/><circle cx="315" cy="256.2857142857143" r="11" fill="#FFCD00" stroke="#111111" stroke-width="5"/>
+
+</svg>
